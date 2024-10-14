@@ -8,6 +8,7 @@ import { networksFlow } from "../beerjs/networks.flow";
 import { AssetsBeerJsFlow } from "../beerjs/assetsBeerJs.flow";
 import { relevantLinksFlow } from "../beerjs/relevantLinks.flow";
 import { ShowYourselfFlow } from "../beerjs/showYourself.flow";
+import { dataCreatorFlow } from "../beerjs/dataCreator.flow";
 
 
 
@@ -19,10 +20,10 @@ export const menuFlow = addKeyword<Provider, Database>(['menu', 'Menu', 'MENU', 
             'Toca 1 para ver *redes* de beer JS\n',
             'Toca 2 para *descargar* assets de la Beer JS\n',
             'Toca 3 para ver *links relevantes*\n',
-            'Toca 4 para ver los datos *capturables*\n',
-            'Toca 5 para... idea de states?? \n',
+            'Toca 4 para ver los *datos capturables*\n',
+            'Toca 5 para... idea de states??\n',
             'Toca 6 para ollama con langchain ??\n',
-            'Toca 7 para ver datos del creador del bot \n',
+            'Toca 7 para ver datos del *creador del bot*\n',
             'Toca 0 para "Salir"\n',
         ],
         { capture: true, delay: Math.random() * (3000 - 1000) },
@@ -38,6 +39,8 @@ export const menuFlow = addKeyword<Provider, Database>(['menu', 'Menu', 'MENU', 
                     return gotoFlow(relevantLinksFlow);
                 case '4':
                     return gotoFlow(ShowYourselfFlow);
+                case '7':
+                    return gotoFlow(dataCreatorFlow);
                 case '0':
                     return gotoFlow(byeFlow);
                 default:

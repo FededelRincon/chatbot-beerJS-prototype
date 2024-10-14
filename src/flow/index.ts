@@ -11,6 +11,7 @@ import { downloadAssetsFlow } from './beerjs/downloadAssets.flow';
 import { AssetsBeerJsFlow } from './beerjs/assetsBeerJs.flow';
 import { relevantLinksFlow } from './beerjs/relevantLinks.flow';
 import { ShowYourselfFlow } from './beerjs/showYourself.flow';
+import { dataCreatorFlow } from './beerjs/dataCreator.flow';
 
 
 
@@ -34,6 +35,7 @@ export const adapterFlow = createFlow([
   downloadAssetsFlow,
   relevantLinksFlow,
   ShowYourselfFlow,
+  dataCreatorFlow,
   
 ]);
 

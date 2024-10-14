@@ -1,0 +1,1 @@
+export { adapterProvider } from "./baileysProvider";

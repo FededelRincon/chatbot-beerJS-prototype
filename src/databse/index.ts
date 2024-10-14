@@ -1,0 +1,1 @@
+export { adapterDB } from "./memoryDB";

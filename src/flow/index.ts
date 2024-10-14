@@ -6,6 +6,9 @@ import { menuFlow } from './basic/menu.flow';
 import { byeFlow } from './basic/bye.flow';
 import { mediaFlow } from './basic/media.flow';
 import { audioFlow } from './basic/audio.flow';
+import { networksFlow } from './beerjs/networksFlow';
+import { downloadAssetsFlow } from './beerjs/downloadAssetsFlow';
+import { AssetsBeerJsFlow } from './beerjs/assetsBeerJsFlow';
 
 
 
@@ -16,20 +19,18 @@ export const adapterFlow = createFlow([
   registerFlow,
   // welcomeFlow
 
-
+  // basic
   hiFlow, 
   menuFlow,
   byeFlow,
   mediaFlow,
   audioFlow,
+
+  // beerjs
+  networksFlow,
+  AssetsBeerJsFlow,
+  downloadAssetsFlow,
   
-  // howToFlow,
-  // whichSupermarketsFlow,
-  // comparatorFlow, 
-  // dataCreatorFlow,
-
-  // ollamaFlow,
-
 ]);
 
 

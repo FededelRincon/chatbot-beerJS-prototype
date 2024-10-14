@@ -5,7 +5,7 @@ import { Database, Provider } from "~/types/genericTypes";
 
 
 export const mediaFlow = addKeyword<Provider, Database>(EVENTS.MEDIA)
-    .addAnswer(' ⛔ *BeerJSBot* Mmmm no lo descargare, podria ser un virus !!',)
+    .addAnswer(' ⛔ *BeerJS Bot* Mmmm no lo descargare, podria ser un virus !!',)
     .addAnswer(' 🔙 escribe *menu* para volver al menu',)
 
 

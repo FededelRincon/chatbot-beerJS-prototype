@@ -1,6 +1,6 @@
 import { addKeyword, EVENTS } from "@builderbot/bot";
 import { Database, Provider } from "~/types/genericTypes";
-import { downloadAssetsFlow } from "./downloadAssetsFlow";
+import { downloadAssetsFlow } from "./downloadAssets.flow";
 import { menuFlow } from "../basic/menu.flow";
 
 

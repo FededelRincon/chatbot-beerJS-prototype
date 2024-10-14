@@ -4,8 +4,8 @@ import { Database, Provider } from "~/types/genericTypes";
 import { registerFlow } from "../examples/register.flow";
 import { byeFlow } from "./bye.flow";
 
-import { networksFlow } from "../beerjs/networksFlow";
-import { AssetsBeerJsFlow } from "../beerjs/assetsBeerJsFlow";
+import { networksFlow } from "../beerjs/networks.flow";
+import { AssetsBeerJsFlow } from "../beerjs/assetsBeerJs.flow";
 
 
 

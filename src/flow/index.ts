@@ -6,9 +6,9 @@ import { menuFlow } from './basic/menu.flow';
 import { byeFlow } from './basic/bye.flow';
 import { mediaFlow } from './basic/media.flow';
 import { audioFlow } from './basic/audio.flow';
-import { networksFlow } from './beerjs/networksFlow';
-import { downloadAssetsFlow } from './beerjs/downloadAssetsFlow';
-import { AssetsBeerJsFlow } from './beerjs/assetsBeerJsFlow';
+import { networksFlow } from './beerjs/networks.flow';
+import { downloadAssetsFlow } from './beerjs/downloadAssets.flow';
+import { AssetsBeerJsFlow } from './beerjs/assetsBeerJs.flow';
 
 
 

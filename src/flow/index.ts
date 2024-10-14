@@ -1,25 +1,27 @@
 // importacion manual de archivos
 import { createFlow } from '@builderbot/bot';
-import { discordFlow } from './examples/discord.flow';
-import { fullSamplesFlow } from './examples/fullSample.flow';
 import { registerFlow } from './examples/register.flow';
-import { welcomeFlow } from './examples/welcome.flow';
+import { hiFlow } from './basic/hi.flow';
+import { menuFlow } from './basic/menu.flow';
+import { byeFlow } from './basic/bye.flow';
+import { mediaFlow } from './basic/media.flow';
+import { audioFlow } from './basic/audio.flow';
 
 
 
 
 export const adapterFlow = createFlow([
-  discordFlow,
-  fullSamplesFlow,
+  // discordFlow,
+  // fullSamplesFlow,
   registerFlow,
-  welcomeFlow
+  // welcomeFlow
 
 
-  // hiFlow, 
-  // menuFlow,
-  // byeFlow,
-  // mediaFlow,
-  // audioFlow,
+  hiFlow, 
+  menuFlow,
+  byeFlow,
+  mediaFlow,
+  audioFlow,
   
   // howToFlow,
   // whichSupermarketsFlow,

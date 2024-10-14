@@ -9,6 +9,7 @@ import { audioFlow } from './basic/audio.flow';
 import { networksFlow } from './beerjs/networks.flow';
 import { downloadAssetsFlow } from './beerjs/downloadAssets.flow';
 import { AssetsBeerJsFlow } from './beerjs/assetsBeerJs.flow';
+import { relevantLinksFlow } from './beerjs/relevantLinks.flow';
 
 
 
@@ -30,6 +31,7 @@ export const adapterFlow = createFlow([
   networksFlow,
   AssetsBeerJsFlow,
   downloadAssetsFlow,
+  relevantLinksFlow,
   
 ]);
 

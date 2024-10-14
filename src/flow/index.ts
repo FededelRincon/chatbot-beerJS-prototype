@@ -10,6 +10,7 @@ import { networksFlow } from './beerjs/networks.flow';
 import { downloadAssetsFlow } from './beerjs/downloadAssets.flow';
 import { AssetsBeerJsFlow } from './beerjs/assetsBeerJs.flow';
 import { relevantLinksFlow } from './beerjs/relevantLinks.flow';
+import { ShowYourselfFlow } from './beerjs/showYourself.flow';
 
 
 
@@ -32,6 +33,7 @@ export const adapterFlow = createFlow([
   AssetsBeerJsFlow,
   downloadAssetsFlow,
   relevantLinksFlow,
+  ShowYourselfFlow,
   
 ]);
 

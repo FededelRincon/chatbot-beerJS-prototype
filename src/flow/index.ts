@@ -1,33 +1,44 @@
 // importacion manual de archivos
 import { createFlow } from '@builderbot/bot';
 import { registerFlow } from './examples/register.flow';
+
+// basic
 import { hiFlow } from './basic/hi.flow';
 import { menuFlow } from './basic/menu.flow';
 import { byeFlow } from './basic/bye.flow';
 import { mediaFlow } from './basic/media.flow';
 import { audioFlow } from './basic/audio.flow';
+
+// beerjs
 import { networksFlow } from './beerjs/networks.flow';
 import { downloadAssetsFlow } from './beerjs/downloadAssets.flow';
 import { AssetsBeerJsFlow } from './beerjs/assetsBeerJs.flow';
 import { relevantLinksFlow } from './beerjs/relevantLinks.flow';
 import { RecolectingDataUserFlow } from './beerjs/recolectingDataUser.flow';
 import { dataCreatorFlow } from './beerjs/dataCreator.flow';
+import { MenuIAFlow } from './IA/5ManuallyWay/MenuIA.flow';
+import { listOptionsFlow } from './basic/listOptions.flow';
 
+// IA
+// import { FlowRoutingFlow } from './IA/1FlowRouting.flow';
+// import { LangChainFlow } from './IA/2AIFlow.flow';
+// import { AutomaticIAFlow } from './IA/3automaticIA.flow';
+// import { LangChaingGetIntention } from './IA/4LangChain.flow';
 
 
 
 export const adapterFlow = createFlow([
   // discordFlow,
   // fullSamplesFlow,
-  registerFlow,
+  // registerFlow,
   // welcomeFlow
 
   // basic
   hiFlow, 
-  menuFlow,
   byeFlow,
   mediaFlow,
   audioFlow,
+  // menuFlow,          ////MENU REGULAR SIN IA
 
   // beerjs
   networksFlow,
@@ -37,6 +48,13 @@ export const adapterFlow = createFlow([
   RecolectingDataUserFlow,
   dataCreatorFlow,
   
+  // IA
+  // FlowRoutingFlow,
+  // LangChainFlow,
+  // AutomaticIAFlow,
+  // LangChaingGetIntention
+  MenuIAFlow,           ///////MENU CON IA
+  listOptionsFlow
 ]);
 
 

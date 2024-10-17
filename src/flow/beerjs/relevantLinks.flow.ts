@@ -3,7 +3,7 @@ import { Database, Provider } from "~/types/genericTypes";
 
 
 export const relevantLinksFlow = addKeyword<Provider, Database>(EVENTS.ACTION)
-.addAnswer('Estas son las redes de BeerJS CBA 🍻')
+.addAnswer('Estas son los links relevantes de la charla 🍻')
 .addAnswer(`
 1. *Repositorio*: https://github.com/FededelRincon/chatbot-beerJS-prototype/
 2. *BuilderBot*: https://builderbot.vercel.app/

@@ -19,6 +19,11 @@ const main = async () => {
             flow: flow,
             provider: adapterProvider,
             database: adapterDB,
+        }, {
+            queue: {
+                timeout: 3000,
+                concurrencyLimit: 50
+            }
         })
 
         // agrega rutas

@@ -8,8 +8,8 @@ import { menuFlow } from "../basic/menu.flow";
 export const AssetsBeerJsFlow = addKeyword<Provider, Database>(EVENTS.ACTION)
 .addAnswer(
     [
-        'Realmente quieres descargarlos?:\n',
-        'Toca 1, para *descargar* 💾 las imagenes\n',
+        'Estas seguro que quieres ver las imagenes?:\n',
+        'Toca 1, para que te envie las imagenes 💾\n',
         'Toca 0, para *volver* al menu 🔙 \n',
     ],
     { capture: true, delay: 1},

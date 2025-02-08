@@ -1,20 +1,19 @@
 // importacion manual de archivos
-import { createFlow } from '@builderbot/bot';
-import { registerFlow } from './examples/register.flow';
-import { hiFlow } from './basic/hi.flow';
-import { menuFlow } from './basic/menu.flow';
-import { byeFlow } from './basic/bye.flow';
-import { mediaFlow } from './basic/media.flow';
-import { audioFlow } from './basic/audio.flow';
-import { networksFlow } from './beerjs/networks.flow';
-import { downloadAssetsFlow } from './beerjs/downloadAssets.flow';
-import { AssetsBeerJsFlow } from './beerjs/assetsBeerJs.flow';
-import { relevantLinksFlow } from './beerjs/relevantLinks.flow';
-import { RecolectingDataUserFlow } from './beerjs/recolectingDataUser.flow';
-import { dataCreatorFlow } from './beerjs/dataCreator.flow';
-
-
-
+import { createFlow } from "@builderbot/bot";
+import { registerFlow } from "./examples/register.flow";
+import { hiFlow } from "./basic/hi.flow";
+import { menuFlow } from "./basic/menu.flow";
+import { byeFlow } from "./basic/bye.flow";
+import { mediaFlow } from "./basic/media.flow";
+import { audioFlow } from "./basic/audio.flow";
+import { networksFlow } from "./beerjs/networks.flow";
+import { downloadAssetsFlow } from "./beerjs/downloadAssets.flow";
+import { AssetsBeerJsFlow } from "./beerjs/assetsBeerJs.flow";
+import { relevantLinksFlow } from "./beerjs/relevantLinks.flow";
+import { RecolectingDataUserFlow } from "./beerjs/recolectingDataUser.flow";
+import { dataCreatorFlow } from "./beerjs/dataCreator.flow";
+import { ollamaFlow } from "./beerjs/ollama.flow";
+import { noDisponibleFlow } from "./beerjs/noDisponible.flow";
 
 export const adapterFlow = createFlow([
   // discordFlow,
@@ -23,7 +22,7 @@ export const adapterFlow = createFlow([
   // welcomeFlow
 
   // basic
-  hiFlow, 
+  hiFlow,
   menuFlow,
   byeFlow,
   mediaFlow,
@@ -36,9 +35,9 @@ export const adapterFlow = createFlow([
   relevantLinksFlow,
   RecolectingDataUserFlow,
   dataCreatorFlow,
-  
+  ollamaFlow,
+  noDisponibleFlow,
 ]);
-
 
 // importacion automatica de archivos
 // src/flow/index.ts

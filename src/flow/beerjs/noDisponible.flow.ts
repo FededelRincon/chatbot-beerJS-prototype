@@ -9,5 +9,7 @@ export const noDisponibleFlow = addKeyword(EVENTS.WELCOME)
   .addAnswer(
     "Volviendo al menú...",
     { delay: 1500, capture: false },
-    async (ctx, { gotoFlow }) => gotoFlow(menuFlow)
+    async (ctx, { gotoFlow }) => {
+      return gotoFlow(menuFlow);
+    }
   );

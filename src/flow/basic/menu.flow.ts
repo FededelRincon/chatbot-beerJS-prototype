@@ -11,6 +11,7 @@ import { RecolectingDataUserFlow } from "../beerjs/recolectingDataUser.flow";
 import { dataCreatorFlow } from "../beerjs/dataCreator.flow";
 import { ollamaFlow } from "../beerjs/ollama.flow";
 import { noDisponibleFlow } from "../beerjs/noDisponible.flow";
+import ollamaInfiereFlow from "../beerjs/ollamaInfiere.flow";
 
 export const menuFlow = addKeyword<Provider, Database>([
   "menu",
@@ -24,7 +25,7 @@ export const menuFlow = addKeyword<Provider, Database>([
     "Toca 2 para *DESCARGAR* assets de la Beer JS\n",
     "Toca 3 para ver *LINKS* relevantes de la charla\n",
     "Toca 4 para *CAPTURAR* tus datos \n",
-    "Toca 5 para ver usar *builderbot* con *ollama* \n",
+    "Toca 5 para ver usar *builderbot* con *IA* \n",
     "Toca 9 para ver datos del *CREADOR* del bot\n",
     'Toca 0 para "Salir"\n',
   ],
@@ -43,6 +44,7 @@ export const menuFlow = addKeyword<Provider, Database>([
         return gotoFlow(RecolectingDataUserFlow);
       case "5":
         // return gotoFlow(ollamaFlow);
+        // return gotoFlow(ollamaInfiereFlow);
         return gotoFlow(noDisponibleFlow);
       case "9":
         return gotoFlow(dataCreatorFlow);

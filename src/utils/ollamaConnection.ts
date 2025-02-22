@@ -16,14 +16,16 @@ export const getOllamaResponse = async (prompt, history = []) => {
       // Si se tiene historial, se asume que ya se configuraron los roles apropiadamente
       messages = [{ role: "system", content: prompt }, ...history];
     }
-    // console.log("Enviando mensajes a ollama:", messages);
 
     const response = await ollama.chat({
       model: "llama3.2:3b",
+      // model: "deepseek-r1:1.5b ",  //falla porque usa <think></think> todo el tiempo
+      // model: "llama3.2:latest  ",
+      // model: "phi3:latest",
+      // model: "codeqwen:latest ",
       messages: messages,
     });
 
-    // console.log("Respuesta de ollama:", response);
     if (response && response.message && response.message.content) {
       return response.message.content;
     } else {

@@ -14,6 +14,7 @@ import { RecolectingDataUserFlow } from "./beerjs/recolectingDataUser.flow";
 import { dataCreatorFlow } from "./beerjs/dataCreator.flow";
 import { ollamaFlow } from "./beerjs/ollama.flow";
 import { noDisponibleFlow } from "./beerjs/noDisponible.flow";
+import ollamaInfiereFlow from "./beerjs/ollamaInfiere.flow";
 
 export const adapterFlow = createFlow([
   // discordFlow,
@@ -36,6 +37,7 @@ export const adapterFlow = createFlow([
   RecolectingDataUserFlow,
   dataCreatorFlow,
   ollamaFlow,
+  ollamaInfiereFlow,
   noDisponibleFlow,
 ]);
 

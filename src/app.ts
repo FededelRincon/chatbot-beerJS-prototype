@@ -13,6 +13,7 @@ const main = async () => {
     // Espera a que `adapterFlow` y `routeHandlers` se resuelvan
     const flow = await adapterFlow;
     const routes = await routeHandlers;
+    console.log("Archivos de rutas encontrados:", routes);
 
     const { handleCtx, httpServer } = await createBot(
       {

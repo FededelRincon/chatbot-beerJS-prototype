@@ -3,7 +3,7 @@ import { join } from "path";
 import { adapterProvider } from "~/providers";
 
 export const qrRoutes = (handleCtx: Function) => {
-  adapterProvider.server.post(
+  adapterProvider.server.get(
     "/qr",
     handleCtx(async (bot, req, res) => {
       const PATH_QR = join(process.cwd(), `bot.qr.png`);

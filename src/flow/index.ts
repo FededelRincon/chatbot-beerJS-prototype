@@ -12,9 +12,7 @@ import { AssetsBeerJsFlow } from "./beerjs/assetsBeerJs.flow";
 import { relevantLinksFlow } from "./beerjs/relevantLinks.flow";
 import { RecolectingDataUserFlow } from "./beerjs/recolectingDataUser.flow";
 import { dataCreatorFlow } from "./beerjs/dataCreator.flow";
-import { ollamaFlow } from "./beerjs/ollama.flow";
 import { noDisponibleFlow } from "./beerjs/noDisponible.flow";
-import ollamaInfiereFlow from "./beerjs/ollamaInfiere.flow";
 
 export const adapterFlow = createFlow([
   // discordFlow,
@@ -36,8 +34,6 @@ export const adapterFlow = createFlow([
   relevantLinksFlow,
   RecolectingDataUserFlow,
   dataCreatorFlow,
-  ollamaFlow,
-  ollamaInfiereFlow,
   noDisponibleFlow,
 ]);
 
